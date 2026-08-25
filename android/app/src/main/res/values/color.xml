@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#FFE21F26</color>
+    <color name="colorPrimaryDark">#9C0308</color>
+    <color name="colorAccent">#FF898D</color>
+    <color name="accept_call_background_color">#03A10A</color>
+    <color name="decline_call_background_color">#FFE21F26</color>
+
+
+    <color name="gray">#808080</color>
+    <color name="black">#000000</color>
+    <color name="accept">#4CAF50</color>
+    <color name="accept_ripple">#A6FFA9</color>
+    <color name="decline">#F44336</color>
+    <color name="decline_ripple">#FB8D85</color>
+
+    <color name="action_text">#FFFFFF</color>
+    <color name="ripple_main_color">#80ffffff</color>
+    <color name="white">#FFFFFF</color>
+
+
+
+    <color name="black_70">#B3000000</color>
+    <color name="black_60">#99000000</color>
+    <color name="black_50">#80000000</color>
+    <color name="black_40">#66000000</color>
+    <color name="black_30">#4D000000</color>
+    <color name="black_20">#33000000</color>
+    <color name="black_10">#1A000000</color>
+
+    <array name="call_user_item_view_overlay_gradient_colors">
+        <item>#B3000000</item> <!-- Color.black.opacity(0.7) -->
+        <item>#99000000</item> <!-- Color.black.opacity(0.6) -->
+        <item>#80000000</item> <!-- Color.black.opacity(0.5) -->
+        <item>#66000000</item> <!-- Color.black.opacity(0.4) -->
+        <item>#4D000000</item> <!-- Color.black.opacity(0.3) -->
+        <item>#33000000</item> <!-- Color.black.opacity(0.2) -->
+        <item>#1A000000</item> <!-- Color.black.opacity(0.1) -->
+    </array>
+</resources>

@@ -1,0 +1,2067 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */; };
+		3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
+		3D3A5C9E698780D27510EA0C /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F28BDBE2B0F758CC059D23 /* Pods_Runner.framework */; };
+		74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74858FAE1ED2DC5600515810 /* AppDelegate.swift */; };
+		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
+		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
+		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
+		DA0063D72CE6457000822395 /* GeofenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0063D62CE6457000822395 /* GeofenceService.swift */; };
+		DA0063DD2CE64BF700822395 /* ClockInOutSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0063DC2CE64BD500822395 /* ClockInOutSession.swift */; };
+		DA0063DF2CE64C4C00822395 /* FirebaseLocationLogUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0063DE2CE64C4B00822395 /* FirebaseLocationLogUpdater.swift */; };
+		DA0063E12CE64D2300822395 /* MyDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0063E02CE64D2300822395 /* MyDetails.swift */; };
+		DA0A4F442D6CEB5800B257B9 /* PusherSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DA0A4F432D6CEB5800B257B9 /* PusherSwift */; };
+		DA3FD1132D5114C4003DAD73 /* RtcBasic in Frameworks */ = {isa = PBXBuildFile; productRef = DA3FD1122D5114C4003DAD73 /* RtcBasic */; };
+		DA3FD1152D51381C003DAD73 /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3FD1142D51381C003DAD73 /* Pods_Runner.framework */; };
+		DA3FD11B2D5142A1003DAD73 /* RtcBasic in Frameworks */ = {isa = PBXBuildFile; productRef = DA3FD11A2D5142A1003DAD73 /* RtcBasic */; };
+		DA3FD11D2D514C5D003DAD73 /* AppLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3FD11C2D514C53003DAD73 /* AppLogger.swift */; };
+		DA9EDB852B7F875600958A82 /* LocationChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9EDB832B7F875600958A82 /* LocationChannel.swift */; };
+		DA9EDB862B7F875600958A82 /* LocationSrevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9EDB842B7F875600958A82 /* LocationSrevice.swift */; };
+		DAB2BBA12D43BAF300F0C411 /* PusherSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DAB2BBA02D43BAF300F0C411 /* PusherSwift */; };
+		DAB2BBA22D43BB3300F0C411 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC72B8D2AD7134E001226EB /* libsqlite3.0.tbd */; };
+		DAB2BBA32D43BB3300F0C411 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC72B8E2AD7134E001226EB /* libsqlite3.tbd */; };
+		DAB2BBA42D43BB3300F0C411 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC72B8D2AD7134E001226EB /* libsqlite3.0.tbd */; };
+		DAB2BBA52D43BB3300F0C411 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC72B8E2AD7134E001226EB /* libsqlite3.tbd */; };
+		DAB2BBA72D43BB4700F0C411 /* BackgroundTasks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB2BBA62D43BB4700F0C411 /* BackgroundTasks.framework */; };
+		DAB2BC052D43BCB200F0C411 /* ModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBE62D43BCB200F0C411 /* ModelType.swift */; };
+		DAB2BC062D43BCB200F0C411 /* AgoraCallDataLoaderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBB52D43BCB200F0C411 /* AgoraCallDataLoaderExtension.swift */; };
+		DAB2BC072D43BCB200F0C411 /* CallChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBFC2D43BCB200F0C411 /* CallChannel.swift */; };
+		DAB2BC082D43BCB200F0C411 /* CallNoAnswerEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBF62D43BCB200F0C411 /* CallNoAnswerEvent.swift */; };
+		DAB2BC092D43BCB200F0C411 /* VoipChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBD12D43BCB200F0C411 /* VoipChannel.swift */; };
+		DAB2BC0A2D43BCB200F0C411 /* AgoraDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBB82D43BCB200F0C411 /* AgoraDelegateExtension.swift */; };
+		DAB2BC0B2D43BCB200F0C411 /* GroupConversationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBEA2D43BCB200F0C411 /* GroupConversationModel.swift */; };
+		DAB2BC0C2D43BCB200F0C411 /* DatabaseDecoderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBE32D43BCB200F0C411 /* DatabaseDecoderExtension.swift */; };
+		DAB2BC0D2D43BCB200F0C411 /* CallTimeOutSchedulerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBD62D43BCB200F0C411 /* CallTimeOutSchedulerExtension.swift */; };
+		DAB2BC0E2D43BCB200F0C411 /* GroupVideoCallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBC52D43BCB200F0C411 /* GroupVideoCallView.swift */; };
+		DAB2BC0F2D43BCB200F0C411 /* OneToOneVideoCallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBC82D43BCB200F0C411 /* OneToOneVideoCallView.swift */; };
+		DAB2BC102D43BCB200F0C411 /* CallChannelEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBFD2D43BCB200F0C411 /* CallChannelEvents.swift */; };
+		DAB2BC112D43BCB200F0C411 /* StartCallRecordingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBAE2D43BCB200F0C411 /* StartCallRecordingModel.swift */; };
+		DAB2BC122D43BCB200F0C411 /* AgoraCallControlsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBB42D43BCB200F0C411 /* AgoraCallControlsExtension.swift */; };
+		DAB2BC132D43BCB200F0C411 /* AgoraStaticVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBC02D43BCB200F0C411 /* AgoraStaticVideoView.swift */; };
+		DAB2BC142D43BCB200F0C411 /* AgoraReseterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBBA2D43BCB200F0C411 /* AgoraReseterExtension.swift */; };
+		DAB2BC152D43BCB200F0C411 /* CallScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBCA2D43BCB200F0C411 /* CallScreenView.swift */; };
+		DAB2BC162D43BCB200F0C411 /* CallAcceptedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBF42D43BCB200F0C411 /* CallAcceptedEvent.swift */; };
+		DAB2BC172D43BCB200F0C411 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBF22D43BCB200F0C411 /* DatabaseManager.swift */; };
+		DAB2BC182D43BCB200F0C411 /* GroupAudioCallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBC42D43BCB200F0C411 /* GroupAudioCallView.swift */; };
+		DAB2BC192D43BCB200F0C411 /* AgoraListenersForCallKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBB92D43BCB200F0C411 /* AgoraListenersForCallKit.swift */; };
+		DAB2BC1B2D43BCB200F0C411 /* GroupSettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBEC2D43BCB200F0C411 /* GroupSettingsModel.swift */; };
+		DAB2BC1C2D43BCB200F0C411 /* ConversationReciverModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBEF2D43BCB200F0C411 /* ConversationReciverModel.swift */; };
+		DAB2BC1D2D43BCB200F0C411 /* StartCallRecordingApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBAB2D43BCB200F0C411 /* StartCallRecordingApi.swift */; };
+		DAB2BC1E2D43BCB200F0C411 /* ConversationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBEE2D43BCB200F0C411 /* ConversationModel.swift */; };
+		DAB2BC1F2D43BCB200F0C411 /* CallRingingEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBF72D43BCB200F0C411 /* CallRingingEvent.swift */; };
+		DAB2BC202D43BCB200F0C411 /* CallUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBBD2D43BCB200F0C411 /* CallUser.swift */; };
+		DAB2BC212D43BCB200F0C411 /* CallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBDB2D43BCB200F0C411 /* CallManager.swift */; };
+		DAB2BC222D43BCB200F0C411 /* DatabasePathFinderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBE42D43BCB200F0C411 /* DatabasePathFinderExtension.swift */; };
+		DAB2BC232D43BCB200F0C411 /* AgoraDynamicVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBBF2D43BCB200F0C411 /* AgoraDynamicVideoView.swift */; };
+		DAB2BC242D43BCB200F0C411 /* AgoraValidatorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBBB2D43BCB200F0C411 /* AgoraValidatorExtension.swift */; };
+		DAB2BC252D43BCB200F0C411 /* AgoraCallRecordingExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBB62D43BCB200F0C411 /* AgoraCallRecordingExtension.swift */; };
+		DAB2BC272D43BCB200F0C411 /* NativeCallingEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBD32D43BCB200F0C411 /* NativeCallingEvents.swift */; };
+		DAB2BC282D43BCB200F0C411 /* ParticipantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBE72D43BCB200F0C411 /* ParticipantModel.swift */; };
+		DAB2BC292D43BCB200F0C411 /* InterruptionNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBDC2D43BCB200F0C411 /* InterruptionNotificationManager.swift */; };
+		DAB2BC2A2D43BCB200F0C411 /* JoiningAs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBB22D43BCB200F0C411 /* JoiningAs.swift */; };
+		DAB2BC2B2D43BCB200F0C411 /* CallEventsBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBD52D43BCB200F0C411 /* CallEventsBinder.swift */; };
+		DAB2BC2C2D43BCB200F0C411 /* ProviderDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBD72D43BCB200F0C411 /* ProviderDelegateExtension.swift */; };
+		DAB2BC2D2D43BCB200F0C411 /* CallPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBE02D43BCB200F0C411 /* CallPayload.swift */; };
+		DAB2BC2E2D43BCB200F0C411 /* CallEventsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBD92D43BCB200F0C411 /* CallEventsHelper.swift */; };
+		DAB2BC2F2D43BCB200F0C411 /* PusherAuthenticatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BC002D43BCB200F0C411 /* PusherAuthenticatorDelegate.swift */; };
+		DAB2BC302D43BCB200F0C411 /* CallTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBC22D43BCB200F0C411 /* CallTimeView.swift */; };
+		DAB2BC312D43BCB200F0C411 /* AgoraCallTimerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBB72D43BCB200F0C411 /* AgoraCallTimerExtension.swift */; };
+		DAB2BC322D43BCB200F0C411 /* PusherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BC032D43BCB200F0C411 /* PusherManager.swift */; };
+		DAB2BC332D43BCB200F0C411 /* CallState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBB12D43BCB200F0C411 /* CallState.swift */; };
+		DAB2BC342D43BCB200F0C411 /* CallEventDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBFA2D43BCB200F0C411 /* CallEventDataModel.swift */; };
+		DAB2BC352D43BCB200F0C411 /* OneToOneAudioCallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBC72D43BCB200F0C411 /* OneToOneAudioCallView.swift */; };
+		DAB2BC362D43BCB200F0C411 /* PushKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBDD2D43BCB200F0C411 /* PushKitManager.swift */; };
+		DAB2BC372D43BCB200F0C411 /* CallUserBusyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBF82D43BCB200F0C411 /* CallUserBusyEvent.swift */; };
+		DAB2BC382D43BCB200F0C411 /* AgoraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBCD2D43BCB200F0C411 /* AgoraManager.swift */; };
+		DAB2BC392D43BCB200F0C411 /* StopCallRecordingApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBAC2D43BCB200F0C411 /* StopCallRecordingApi.swift */; };
+		DAB2BC3A2D43BCB200F0C411 /* PusherDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BC012D43BCB200F0C411 /* PusherDelegateExtension.swift */; };
+		DAB2BC3B2D43BCB200F0C411 /* NativeCallingEventChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBCF2D43BCB200F0C411 /* NativeCallingEventChannel.swift */; };
+		DAB2BC3C2D43BCB200F0C411 /* CallDeclinedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBF52D43BCB200F0C411 /* CallDeclinedEvent.swift */; };
+		DAB2BC3D2D43BCB200F0C411 /* Call.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBDF2D43BCB200F0C411 /* Call.swift */; };
+		DAB2BC3E2D43BCB200F0C411 /* NativeCallingMethodChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBD02D43BCB200F0C411 /* NativeCallingMethodChannel.swift */; };
+		DAB2BC3F2D43BCB200F0C411 /* CallEndedEventApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBAA2D43BCB200F0C411 /* CallEndedEventApi.swift */; };
+		DAB2BC402D43BCB200F0C411 /* AgoraTokenApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBA92D43BCB200F0C411 /* AgoraTokenApi.swift */; };
+		DAB2BC412D43BCB200F0C411 /* CallControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2BBC12D43BCB200F0C411 /* CallControlsView.swift */; };
+		DAC72B8F2AD71367001226EB /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC72B8D2AD7134E001226EB /* libsqlite3.0.tbd */; };
+		DAC72B902AD7136D001226EB /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC72B8E2AD7134E001226EB /* libsqlite3.tbd */; };
+		DAC72B912AD71374001226EB /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC72B8D2AD7134E001226EB /* libsqlite3.0.tbd */; };
+		DAC72B922AD7137A001226EB /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC72B8E2AD7134E001226EB /* libsqlite3.tbd */; };
+		DACB775C2BD6D238009222A3 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = DACB775B2BD6D238009222A3 /* PrivacyInfo.xcprivacy */; };
+		DAD4BF652D9EEECD00000914 /* PusherSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DAD4BF642D9EEECD00000914 /* PusherSwift */; };
+		DAFACE022D43BCB200F0C411 /* RealtimeConfigApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFACE012D43BCB200F0C411 /* RealtimeConfigApi.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneratedPluginRegistrant.h; sourceTree = "<group>"; };
+		1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratedPluginRegistrant.m; sourceTree = "<group>"; };
+		2FBE5F4AB6DF9058665A1168 /* Profile-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Profile-staging.xcconfig"; path = "Flutter/Profile-staging.xcconfig"; sourceTree = "<group>"; };
+		398E215CF37D91B3B091A076 /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
+		3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppFrameworkInfo.plist; path = Flutter/AppFrameworkInfo.plist; sourceTree = "<group>"; };
+		46CF612CEAA8C6D48CB306DB /* Release-prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Release-prod.xcconfig"; path = "Flutter/Release-prod.xcconfig"; sourceTree = "<group>"; };
+		4742A09BB24AAEC36A78FE0B /* Pods-Runner.debug-dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug-dev.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug-dev.xcconfig"; sourceTree = "<group>"; };
+		4F070DCA5EB7539C7A2173F8 /* Profile-dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Profile-dev.xcconfig"; path = "Flutter/Profile-dev.xcconfig"; sourceTree = "<group>"; };
+		5CFECCC43A51E25E9107727A /* Debug-dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Debug-dev.xcconfig"; path = "Flutter/Debug-dev.xcconfig"; sourceTree = "<group>"; };
+		71734F4E0F7E25CD7DF7FB79 /* Release-dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Release-dev.xcconfig"; path = "Flutter/Release-dev.xcconfig"; sourceTree = "<group>"; };
+		73C4A0673CDC19AD792DE345 /* Profile-prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Profile-prod.xcconfig"; path = "Flutter/Profile-prod.xcconfig"; sourceTree = "<group>"; };
+		74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runner-Bridging-Header.h"; sourceTree = "<group>"; };
+		74858FAE1ED2DC5600515810 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7AFA3C8E1D35360C0083082E /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = Flutter/Release.xcconfig; sourceTree = "<group>"; };
+		8040C5D42954B83B054AEA6F /* Pods-Runner.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.profile.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig"; sourceTree = "<group>"; };
+		9740EEB21CF90195004384FC /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Debug.xcconfig; path = Flutter/Debug.xcconfig; sourceTree = "<group>"; };
+		9740EEB31CF90195004384FC /* Generated.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Generated.xcconfig; path = Flutter/Generated.xcconfig; sourceTree = "<group>"; };
+		97C146EE1CF9000F007C117D /* Runner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97C146FB1CF9000F007C117D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		97C146FD1CF9000F007C117D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		97C147001CF9000F007C117D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		97C147021CF9000F007C117D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F85B06EC0C2E6BBA354B5EC /* Debug-prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Debug-prod.xcconfig"; path = "Flutter/Debug-prod.xcconfig"; sourceTree = "<group>"; };
+		B2CFE4D8174C95D97B171924 /* Pods-Runner.release-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release-staging.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.release-staging.xcconfig"; sourceTree = "<group>"; };
+		B45C2F30FB02A6E6601BF7D0 /* Release-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Release-staging.xcconfig"; path = "Flutter/Release-staging.xcconfig"; sourceTree = "<group>"; };
+		BB7DE7A97CAC6144977618E4 /* Pods-Runner.profile-prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.profile-prod.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.profile-prod.xcconfig"; sourceTree = "<group>"; };
+		DA0063D62CE6457000822395 /* GeofenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeofenceService.swift; sourceTree = "<group>"; };
+		DA0063DC2CE64BD500822395 /* ClockInOutSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockInOutSession.swift; sourceTree = "<group>"; };
+		DA0063DE2CE64C4B00822395 /* FirebaseLocationLogUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseLocationLogUpdater.swift; sourceTree = "<group>"; };
+		DA0063E02CE64D2300822395 /* MyDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDetails.swift; sourceTree = "<group>"; };
+		DA3FD1142D51381C003DAD73 /* Pods_Runner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Runner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA3FD11C2D514C53003DAD73 /* AppLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogger.swift; sourceTree = "<group>"; };
+		DA9E6F8B29FE94A80047A0BE /* Runner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Runner.entitlements; sourceTree = "<group>"; };
+		DA9EDB832B7F875600958A82 /* LocationChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationChannel.swift; sourceTree = "<group>"; };
+		DA9EDB842B7F875600958A82 /* LocationSrevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSrevice.swift; sourceTree = "<group>"; };
+		DAB2BBA62D43BB4700F0C411 /* BackgroundTasks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BackgroundTasks.framework; path = System/Library/Frameworks/BackgroundTasks.framework; sourceTree = SDKROOT; };
+		DAB2BBA92D43BCB200F0C411 /* AgoraTokenApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgoraTokenApi.swift; sourceTree = "<group>"; };
+		DAB2BBAA2D43BCB200F0C411 /* CallEndedEventApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallEndedEventApi.swift; sourceTree = "<group>"; };
+		DAB2BBAB2D43BCB200F0C411 /* StartCallRecordingApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartCallRecordingApi.swift; sourceTree = "<group>"; };
+		DAB2BBAC2D43BCB200F0C411 /* StopCallRecordingApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopCallRecordingApi.swift; sourceTree = "<group>"; };
+		DAB2BBAE2D43BCB200F0C411 /* StartCallRecordingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartCallRecordingModel.swift; sourceTree = "<group>"; };
+		DAB2BBB12D43BCB200F0C411 /* CallState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallState.swift; sourceTree = "<group>"; };
+		DAB2BBB22D43BCB200F0C411 /* JoiningAs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoiningAs.swift; sourceTree = "<group>"; };
+		DAB2BBB42D43BCB200F0C411 /* AgoraCallControlsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgoraCallControlsExtension.swift; sourceTree = "<group>"; };
+		DAB2BBB52D43BCB200F0C411 /* AgoraCallDataLoaderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgoraCallDataLoaderExtension.swift; sourceTree = "<group>"; };
+		DAB2BBB62D43BCB200F0C411 /* AgoraCallRecordingExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgoraCallRecordingExtension.swift; sourceTree = "<group>"; };
+		DAB2BBB72D43BCB200F0C411 /* AgoraCallTimerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgoraCallTimerExtension.swift; sourceTree = "<group>"; };
+		DAB2BBB82D43BCB200F0C411 /* AgoraDelegateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgoraDelegateExtension.swift; sourceTree = "<group>"; };
+		DAB2BBB92D43BCB200F0C411 /* AgoraListenersForCallKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgoraListenersForCallKit.swift; sourceTree = "<group>"; };
+		DAB2BBBA2D43BCB200F0C411 /* AgoraReseterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgoraReseterExtension.swift; sourceTree = "<group>"; };
+		DAB2BBBB2D43BCB200F0C411 /* AgoraValidatorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgoraValidatorExtension.swift; sourceTree = "<group>"; };
+		DAB2BBBD2D43BCB200F0C411 /* CallUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallUser.swift; sourceTree = "<group>"; };
+		DAB2BBBF2D43BCB200F0C411 /* AgoraDynamicVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgoraDynamicVideoView.swift; sourceTree = "<group>"; };
+		DAB2BBC02D43BCB200F0C411 /* AgoraStaticVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgoraStaticVideoView.swift; sourceTree = "<group>"; };
+		DAB2BBC12D43BCB200F0C411 /* CallControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallControlsView.swift; sourceTree = "<group>"; };
+		DAB2BBC22D43BCB200F0C411 /* CallTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallTimeView.swift; sourceTree = "<group>"; };
+		DAB2BBC42D43BCB200F0C411 /* GroupAudioCallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupAudioCallView.swift; sourceTree = "<group>"; };
+		DAB2BBC52D43BCB200F0C411 /* GroupVideoCallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupVideoCallView.swift; sourceTree = "<group>"; };
+		DAB2BBC72D43BCB200F0C411 /* OneToOneAudioCallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneToOneAudioCallView.swift; sourceTree = "<group>"; };
+		DAB2BBC82D43BCB200F0C411 /* OneToOneVideoCallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneToOneVideoCallView.swift; sourceTree = "<group>"; };
+		DAB2BBCA2D43BCB200F0C411 /* CallScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallScreenView.swift; sourceTree = "<group>"; };
+		DAB2BBCD2D43BCB200F0C411 /* AgoraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgoraManager.swift; sourceTree = "<group>"; };
+		DAB2BBCF2D43BCB200F0C411 /* NativeCallingEventChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeCallingEventChannel.swift; sourceTree = "<group>"; };
+		DAB2BBD02D43BCB200F0C411 /* NativeCallingMethodChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeCallingMethodChannel.swift; sourceTree = "<group>"; };
+		DAB2BBD12D43BCB200F0C411 /* VoipChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoipChannel.swift; sourceTree = "<group>"; };
+		DAB2BBD32D43BCB200F0C411 /* NativeCallingEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeCallingEvents.swift; sourceTree = "<group>"; };
+		DAB2BBD52D43BCB200F0C411 /* CallEventsBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallEventsBinder.swift; sourceTree = "<group>"; };
+		DAB2BBD62D43BCB200F0C411 /* CallTimeOutSchedulerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallTimeOutSchedulerExtension.swift; sourceTree = "<group>"; };
+		DAB2BBD72D43BCB200F0C411 /* ProviderDelegateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderDelegateExtension.swift; sourceTree = "<group>"; };
+		DAB2BBD92D43BCB200F0C411 /* CallEventsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallEventsHelper.swift; sourceTree = "<group>"; };
+		DAB2BBDB2D43BCB200F0C411 /* CallManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallManager.swift; sourceTree = "<group>"; };
+		DAB2BBDC2D43BCB200F0C411 /* InterruptionNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterruptionNotificationManager.swift; sourceTree = "<group>"; };
+		DAB2BBDD2D43BCB200F0C411 /* PushKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushKitManager.swift; sourceTree = "<group>"; };
+		DAB2BBDF2D43BCB200F0C411 /* Call.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Call.swift; sourceTree = "<group>"; };
+		DAB2BBE02D43BCB200F0C411 /* CallPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallPayload.swift; sourceTree = "<group>"; };
+		DAB2BBE32D43BCB200F0C411 /* DatabaseDecoderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseDecoderExtension.swift; sourceTree = "<group>"; };
+		DAB2BBE42D43BCB200F0C411 /* DatabasePathFinderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabasePathFinderExtension.swift; sourceTree = "<group>"; };
+		DAB2BBE62D43BCB200F0C411 /* ModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelType.swift; sourceTree = "<group>"; };
+		DAB2BBE72D43BCB200F0C411 /* ParticipantModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantModel.swift; sourceTree = "<group>"; };
+		DAB2BBEA2D43BCB200F0C411 /* GroupConversationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupConversationModel.swift; sourceTree = "<group>"; };
+		DAB2BBEC2D43BCB200F0C411 /* GroupSettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupSettingsModel.swift; sourceTree = "<group>"; };
+		DAB2BBEE2D43BCB200F0C411 /* ConversationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationModel.swift; sourceTree = "<group>"; };
+		DAB2BBEF2D43BCB200F0C411 /* ConversationReciverModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationReciverModel.swift; sourceTree = "<group>"; };
+		DAB2BBF22D43BCB200F0C411 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		DAB2BBF42D43BCB200F0C411 /* CallAcceptedEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallAcceptedEvent.swift; sourceTree = "<group>"; };
+		DAB2BBF52D43BCB200F0C411 /* CallDeclinedEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallDeclinedEvent.swift; sourceTree = "<group>"; };
+		DAB2BBF62D43BCB200F0C411 /* CallNoAnswerEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallNoAnswerEvent.swift; sourceTree = "<group>"; };
+		DAB2BBF72D43BCB200F0C411 /* CallRingingEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallRingingEvent.swift; sourceTree = "<group>"; };
+		DAB2BBF82D43BCB200F0C411 /* CallUserBusyEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallUserBusyEvent.swift; sourceTree = "<group>"; };
+		DAB2BBFA2D43BCB200F0C411 /* CallEventDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallEventDataModel.swift; sourceTree = "<group>"; };
+		DAB2BBFC2D43BCB200F0C411 /* CallChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallChannel.swift; sourceTree = "<group>"; };
+		DAB2BBFD2D43BCB200F0C411 /* CallChannelEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallChannelEvents.swift; sourceTree = "<group>"; };
+		DAB2BC002D43BCB200F0C411 /* PusherAuthenticatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PusherAuthenticatorDelegate.swift; sourceTree = "<group>"; };
+		DAB2BC012D43BCB200F0C411 /* PusherDelegateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PusherDelegateExtension.swift; sourceTree = "<group>"; };
+		DAB2BC032D43BCB200F0C411 /* PusherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PusherManager.swift; sourceTree = "<group>"; };
+		DAC72B8D2AD7134E001226EB /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		DAC72B8E2AD7134E001226EB /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		DACB775B2BD6D238009222A3 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		DAFACE012D43BCB200F0C411 /* RealtimeConfigApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeConfigApi.swift; sourceTree = "<group>"; };
+		DDB51C37B351ED772F954F4E /* Pods-Runner.release-dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release-dev.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.release-dev.xcconfig"; sourceTree = "<group>"; };
+		E076569A0E53782A3D8DBF4B /* Pods-Runner.profile-dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.profile-dev.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.profile-dev.xcconfig"; sourceTree = "<group>"; };
+		E0F28BDBE2B0F758CC059D23 /* Pods_Runner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Runner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7A78CB4A3E3DD68707E8631 /* Pods-Runner.debug-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug-staging.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug-staging.xcconfig"; sourceTree = "<group>"; };
+		EAD69B89B81D3CAA88FF440C /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
+		ECF830319FC55DB44F5F8770 /* Pods-Runner.release-prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release-prod.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.release-prod.xcconfig"; sourceTree = "<group>"; };
+		EF2E6596A3B5AC4BBF5A8420 /* Pods-Runner.debug-prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug-prod.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug-prod.xcconfig"; sourceTree = "<group>"; };
+		F199C083770AAA638AAEBE5D /* Pods-Runner.profile-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.profile-staging.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.profile-staging.xcconfig"; sourceTree = "<group>"; };
+		F47CF6EAB9DB854A5BB5AB61 /* Debug-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Debug-staging.xcconfig"; path = "Flutter/Debug-staging.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		97C146EB1CF9000F007C117D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB2BBA72D43BB4700F0C411 /* BackgroundTasks.framework in Frameworks */,
+				DAB2BBA52D43BB3300F0C411 /* libsqlite3.tbd in Frameworks */,
+				DAC72B922AD7137A001226EB /* libsqlite3.tbd in Frameworks */,
+				DA3FD11B2D5142A1003DAD73 /* RtcBasic in Frameworks */,
+				DAC72B902AD7136D001226EB /* libsqlite3.tbd in Frameworks */,
+				DAB2BBA32D43BB3300F0C411 /* libsqlite3.tbd in Frameworks */,
+				DAC72B8F2AD71367001226EB /* libsqlite3.0.tbd in Frameworks */,
+				DAB2BBA12D43BAF300F0C411 /* PusherSwift in Frameworks */,
+				DAB2BBA42D43BB3300F0C411 /* libsqlite3.0.tbd in Frameworks */,
+				DAC72B912AD71374001226EB /* libsqlite3.0.tbd in Frameworks */,
+				DA3FD1152D51381C003DAD73 /* Pods_Runner.framework in Frameworks */,
+				3D3A5C9E698780D27510EA0C /* Pods_Runner.framework in Frameworks */,
+				DA0A4F442D6CEB5800B257B9 /* PusherSwift in Frameworks */,
+				DAB2BBA22D43BB3300F0C411 /* libsqlite3.0.tbd in Frameworks */,
+				DA3FD1132D5114C4003DAD73 /* RtcBasic in Frameworks */,
+				DAD4BF652D9EEECD00000914 /* PusherSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C796F30928D3A113B65144D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EAD69B89B81D3CAA88FF440C /* Pods-Runner.debug.xcconfig */,
+				398E215CF37D91B3B091A076 /* Pods-Runner.release.xcconfig */,
+				8040C5D42954B83B054AEA6F /* Pods-Runner.profile.xcconfig */,
+				4742A09BB24AAEC36A78FE0B /* Pods-Runner.debug-dev.xcconfig */,
+				DDB51C37B351ED772F954F4E /* Pods-Runner.release-dev.xcconfig */,
+				E076569A0E53782A3D8DBF4B /* Pods-Runner.profile-dev.xcconfig */,
+				E7A78CB4A3E3DD68707E8631 /* Pods-Runner.debug-staging.xcconfig */,
+				B2CFE4D8174C95D97B171924 /* Pods-Runner.release-staging.xcconfig */,
+				F199C083770AAA638AAEBE5D /* Pods-Runner.profile-staging.xcconfig */,
+				EF2E6596A3B5AC4BBF5A8420 /* Pods-Runner.debug-prod.xcconfig */,
+				ECF830319FC55DB44F5F8770 /* Pods-Runner.release-prod.xcconfig */,
+				BB7DE7A97CAC6144977618E4 /* Pods-Runner.profile-prod.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9740EEB11CF90186004384FC /* Flutter */ = {
+			isa = PBXGroup;
+			children = (
+				3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */,
+				9740EEB21CF90195004384FC /* Debug.xcconfig */,
+				7AFA3C8E1D35360C0083082E /* Release.xcconfig */,
+				9740EEB31CF90195004384FC /* Generated.xcconfig */,
+				5CFECCC43A51E25E9107727A /* Debug-dev.xcconfig */,
+				71734F4E0F7E25CD7DF7FB79 /* Release-dev.xcconfig */,
+				4F070DCA5EB7539C7A2173F8 /* Profile-dev.xcconfig */,
+				F47CF6EAB9DB854A5BB5AB61 /* Debug-staging.xcconfig */,
+				B45C2F30FB02A6E6601BF7D0 /* Release-staging.xcconfig */,
+				2FBE5F4AB6DF9058665A1168 /* Profile-staging.xcconfig */,
+				9F85B06EC0C2E6BBA354B5EC /* Debug-prod.xcconfig */,
+				46CF612CEAA8C6D48CB306DB /* Release-prod.xcconfig */,
+				73C4A0673CDC19AD792DE345 /* Profile-prod.xcconfig */,
+			);
+			name = Flutter;
+			sourceTree = "<group>";
+		};
+		97C146E51CF9000F007C117D = {
+			isa = PBXGroup;
+			children = (
+				9740EEB11CF90186004384FC /* Flutter */,
+				97C146F01CF9000F007C117D /* Runner */,
+				97C146EF1CF9000F007C117D /* Products */,
+				0C796F30928D3A113B65144D /* Pods */,
+				9D39B5FD7203A57AED250833 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		97C146EF1CF9000F007C117D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97C146EE1CF9000F007C117D /* Runner.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97C146F01CF9000F007C117D /* Runner */ = {
+			isa = PBXGroup;
+			children = (
+				DACB775B2BD6D238009222A3 /* PrivacyInfo.xcprivacy */,
+				DA0063E02CE64D2300822395 /* MyDetails.swift */,
+				DA9E6F8B29FE94A80047A0BE /* Runner.entitlements */,
+				97C146FA1CF9000F007C117D /* Main.storyboard */,
+				74858FAE1ED2DC5600515810 /* AppDelegate.swift */,
+				97C146FD1CF9000F007C117D /* Assets.xcassets */,
+				97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */,
+				97C147021CF9000F007C117D /* Info.plist */,
+				1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */,
+				1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */,
+				74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */,
+				DA3FD11C2D514C53003DAD73 /* AppLogger.swift */,
+				DAB2BBA82D43BBE000F0C411 /* Clock In Out Location */,
+				DAB2BBE22D43BCB200F0C411 /* Callkit */,
+				DAB2BBCE2D43BCB200F0C411 /* Agora */,
+				DAB2BC042D43BCB200F0C411 /* Pusher */,
+				DAB2BBF32D43BCB200F0C411 /* Database */,
+			);
+			path = Runner;
+			sourceTree = "<group>";
+		};
+		9D39B5FD7203A57AED250833 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA3FD1142D51381C003DAD73 /* Pods_Runner.framework */,
+				DAB2BBA62D43BB4700F0C411 /* BackgroundTasks.framework */,
+				DAC72B8D2AD7134E001226EB /* libsqlite3.0.tbd */,
+				DAC72B8E2AD7134E001226EB /* libsqlite3.tbd */,
+				E0F28BDBE2B0F758CC059D23 /* Pods_Runner.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DAB2BBA82D43BBE000F0C411 /* Clock In Out Location */ = {
+			isa = PBXGroup;
+			children = (
+				DA0063DE2CE64C4B00822395 /* FirebaseLocationLogUpdater.swift */,
+				DA9EDB832B7F875600958A82 /* LocationChannel.swift */,
+				DA9EDB842B7F875600958A82 /* LocationSrevice.swift */,
+				DA0063D62CE6457000822395 /* GeofenceService.swift */,
+				DA0063DC2CE64BD500822395 /* ClockInOutSession.swift */,
+			);
+			path = "Clock In Out Location";
+			sourceTree = "<group>";
+		};
+		DAB2BBAD2D43BCB200F0C411 /* Apis */ = {
+			isa = PBXGroup;
+			children = (
+				DAB2BBA92D43BCB200F0C411 /* AgoraTokenApi.swift */,
+				DAFACE012D43BCB200F0C411 /* RealtimeConfigApi.swift */,
+				DAB2BBAA2D43BCB200F0C411 /* CallEndedEventApi.swift */,
+				DAB2BBAB2D43BCB200F0C411 /* StartCallRecordingApi.swift */,
+				DAB2BBAC2D43BCB200F0C411 /* StopCallRecordingApi.swift */,
+			);
+			path = Apis;
+			sourceTree = "<group>";
+		};
+		DAB2BBAF2D43BCB200F0C411 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DAB2BBAE2D43BCB200F0C411 /* StartCallRecordingModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DAB2BBB02D43BCB200F0C411 /* Apis */ = {
+			isa = PBXGroup;
+			children = (
+				DAB2BBAD2D43BCB200F0C411 /* Apis */,
+				DAB2BBAF2D43BCB200F0C411 /* Models */,
+			);
+			path = Apis;
+			sourceTree = "<group>";
+		};
+		DAB2BBB32D43BCB200F0C411 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				DAB2BBB12D43BCB200F0C411 /* CallState.swift */,
+				DAB2BBB22D43BCB200F0C411 /* JoiningAs.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		DAB2BBBC2D43BCB200F0C411 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DAB2BBB42D43BCB200F0C411 /* AgoraCallControlsExtension.swift */,
+				DAB2BBB52D43BCB200F0C411 /* AgoraCallDataLoaderExtension.swift */,
+				DAB2BBB62D43BCB200F0C411 /* AgoraCallRecordingExtension.swift */,
+				DAB2BBB72D43BCB200F0C411 /* AgoraCallTimerExtension.swift */,
+				DAB2BBB82D43BCB200F0C411 /* AgoraDelegateExtension.swift */,
+				DAB2BBB92D43BCB200F0C411 /* AgoraListenersForCallKit.swift */,
+				DAB2BBBA2D43BCB200F0C411 /* AgoraReseterExtension.swift */,
+				DAB2BBBB2D43BCB200F0C411 /* AgoraValidatorExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DAB2BBBE2D43BCB200F0C411 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DAB2BBBD2D43BCB200F0C411 /* CallUser.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DAB2BBC32D43BCB200F0C411 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DAB2BBBF2D43BCB200F0C411 /* AgoraDynamicVideoView.swift */,
+				DAB2BBC02D43BCB200F0C411 /* AgoraStaticVideoView.swift */,
+				DAB2BBC12D43BCB200F0C411 /* CallControlsView.swift */,
+				DAB2BBC22D43BCB200F0C411 /* CallTimeView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		DAB2BBC62D43BCB200F0C411 /* Group Call */ = {
+			isa = PBXGroup;
+			children = (
+				DAB2BBC42D43BCB200F0C411 /* GroupAudioCallView.swift */,
+				DAB2BBC52D43BCB200F0C411 /* GroupVideoCallView.swift */,
+			);
+			path = "Group Call";
+			sourceTree = "<group>";
+		};
+		DAB2BBC92D43BCB200F0C411 /* Oto Call */ = {
+			isa = PBXGroup;
+			children = (
+				DAB2BBC72D43BCB200F0C411 /* OneToOneAudioCallView.swift */,
+				DAB2BBC82D43BCB200F0C411 /* OneToOneVideoCallView.swift */,
+			);
+			path = "Oto Call";
+			sourceTree = "<group>";
+		};
+		DAB2BBCB2D43BCB200F0C411 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DAB2BBC32D43BCB200F0C411 /* Common */,
+				DAB2BBC62D43BCB200F0C411 /* Group Call */,
+				DAB2BBC92D43BCB200F0C411 /* Oto Call */,
+				DAB2BBCA2D43BCB200F0C411 /* CallScreenView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DAB2BBCE2D43BCB200F0C411 /* Agora */ = {
+			isa = PBXGroup;
+			children = (
+				DAB2BBB02D43BCB200F0C411 /* Apis */,
+				DAB2BBB32D43BCB200F0C411 /* Enums */,
+				DAB2BBBC2D43BCB200F0C411 /* Extensions */,
+				DAB2BBBE2D43BCB200F0C411 /* Models */,
+				DAB2BBCB2D43BCB200F0C411 /* View */,
+				DAB2BBCD2D43BCB200F0C411 /* AgoraManager.swift */,
+			);
+			path = Agora;
+			sourceTree = "<group>";
+		};
+		DAB2BBD22D43BCB200F0C411 /* Channels */ = {
+			isa = PBXGroup;
+			children = (
+				DAB2BBCF2D43BCB200F0C411 /* NativeCallingEventChannel.swift */,
+				DAB2BBD02D43BCB200F0C411 /* NativeCallingMethodChannel.swift */,
+				DAB2BBD12D43BCB200F0C411 /* VoipChannel.swift */,
+			);
+			path = Channels;
+			sourceTree = "<group>";
+		};
+		DAB2BBD42D43BCB200F0C411 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				DAB2BBD32D43BCB200F0C411 /* NativeCallingEvents.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		DAB2BBD82D43BCB200F0C411 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DAB2BBD52D43BCB200F0C411 /* CallEventsBinder.swift */,
+				DAB2BBD62D43BCB200F0C411 /* CallTimeOutSchedulerExtension.swift */,
+				DAB2BBD72D43BCB200F0C411 /* ProviderDelegateExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DAB2BBDA2D43BCB200F0C411 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DAB2BBD92D43BCB200F0C411 /* CallEventsHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DAB2BBDE2D43BCB200F0C411 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				DAB2BBDB2D43BCB200F0C411 /* CallManager.swift */,
+				DAB2BBDC2D43BCB200F0C411 /* InterruptionNotificationManager.swift */,
+				DAB2BBDD2D43BCB200F0C411 /* PushKitManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		DAB2BBE12D43BCB200F0C411 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DAB2BBDF2D43BCB200F0C411 /* Call.swift */,
+				DAB2BBE02D43BCB200F0C411 /* CallPayload.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DAB2BBE22D43BCB200F0C411 /* Callkit */ = {
+			isa = PBXGroup;
+			children = (
+				DAB2BBD22D43BCB200F0C411 /* Channels */,
+				DAB2BBD42D43BCB200F0C411 /* Enums */,
+				DAB2BBD82D43BCB200F0C411 /* Extensions */,
+				DAB2BBDA2D43BCB200F0C411 /* Helpers */,
+				DAB2BBDE2D43BCB200F0C411 /* Managers */,
+				DAB2BBE12D43BCB200F0C411 /* Models */,
+			);
+			path = Callkit;
+			sourceTree = "<group>";
+		};
+		DAB2BBE52D43BCB200F0C411 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DAB2BBE32D43BCB200F0C411 /* DatabaseDecoderExtension.swift */,
+				DAB2BBE42D43BCB200F0C411 /* DatabasePathFinderExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DAB2BBE82D43BCB200F0C411 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DAB2BBE62D43BCB200F0C411 /* ModelType.swift */,
+				DAB2BBE72D43BCB200F0C411 /* ParticipantModel.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		DAB2BBED2D43BCB200F0C411 /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				DAB2BBEA2D43BCB200F0C411 /* GroupConversationModel.swift */,
+				DAB2BBEC2D43BCB200F0C411 /* GroupSettingsModel.swift */,
+			);
+			path = Group;
+			sourceTree = "<group>";
+		};
+		DAB2BBF02D43BCB200F0C411 /* Oto */ = {
+			isa = PBXGroup;
+			children = (
+				DAB2BBEE2D43BCB200F0C411 /* ConversationModel.swift */,
+				DAB2BBEF2D43BCB200F0C411 /* ConversationReciverModel.swift */,
+			);
+			path = Oto;
+			sourceTree = "<group>";
+		};
+		DAB2BBF12D43BCB200F0C411 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DAB2BBE82D43BCB200F0C411 /* Common */,
+				DAB2BBED2D43BCB200F0C411 /* Group */,
+				DAB2BBF02D43BCB200F0C411 /* Oto */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DAB2BBF32D43BCB200F0C411 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				DAB2BBE52D43BCB200F0C411 /* Extensions */,
+				DAB2BBF12D43BCB200F0C411 /* Models */,
+				DAB2BBF22D43BCB200F0C411 /* DatabaseManager.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		DAB2BBF92D43BCB200F0C411 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				DAB2BBF42D43BCB200F0C411 /* CallAcceptedEvent.swift */,
+				DAB2BBF52D43BCB200F0C411 /* CallDeclinedEvent.swift */,
+				DAB2BBF62D43BCB200F0C411 /* CallNoAnswerEvent.swift */,
+				DAB2BBF72D43BCB200F0C411 /* CallRingingEvent.swift */,
+				DAB2BBF82D43BCB200F0C411 /* CallUserBusyEvent.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		DAB2BBFB2D43BCB200F0C411 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DAB2BBFA2D43BCB200F0C411 /* CallEventDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DAB2BBFE2D43BCB200F0C411 /* Call Channel */ = {
+			isa = PBXGroup;
+			children = (
+				DAB2BBF92D43BCB200F0C411 /* Events */,
+				DAB2BBFB2D43BCB200F0C411 /* Models */,
+				DAB2BBFC2D43BCB200F0C411 /* CallChannel.swift */,
+				DAB2BBFD2D43BCB200F0C411 /* CallChannelEvents.swift */,
+			);
+			path = "Call Channel";
+			sourceTree = "<group>";
+		};
+		DAB2BBFF2D43BCB200F0C411 /* Channels */ = {
+			isa = PBXGroup;
+			children = (
+				DAB2BBFE2D43BCB200F0C411 /* Call Channel */,
+			);
+			path = Channels;
+			sourceTree = "<group>";
+		};
+		DAB2BC022D43BCB200F0C411 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DAB2BC002D43BCB200F0C411 /* PusherAuthenticatorDelegate.swift */,
+				DAB2BC012D43BCB200F0C411 /* PusherDelegateExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DAB2BC042D43BCB200F0C411 /* Pusher */ = {
+			isa = PBXGroup;
+			children = (
+				DAB2BBFF2D43BCB200F0C411 /* Channels */,
+				DAB2BC022D43BCB200F0C411 /* Extensions */,
+				DAB2BC032D43BCB200F0C411 /* PusherManager.swift */,
+			);
+			path = Pusher;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		97C146ED1CF9000F007C117D /* Runner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97C147051CF9000F007C117D /* Build configuration list for PBXNativeTarget "Runner" */;
+			buildPhases = (
+				9FD7029D9464C1111632E573 /* [CP] Check Pods Manifest.lock */,
+				9740EEB61CF901F6004384FC /* Run Script */,
+				97C146EA1CF9000F007C117D /* Sources */,
+				97C146EB1CF9000F007C117D /* Frameworks */,
+				97C146EC1CF9000F007C117D /* Resources */,
+				3B06AD1E1E4923F5004D2608 /* Thin Binary */,
+				67995B63309647795FC8BFB0 /* [CP] Embed Pods Frameworks */,
+				78D41679467F2577347B21ED /* [CP] Copy Pods Resources */,
+				35A2E7DA8544F423C566E3DA /* [firebase_crashlytics] Crashlytics Upload Symbols */,
+				199FF726C14B8255FC67DCAD /* Copy GoogleService-Info.plist */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Runner;
+			productName = Runner;
+			productReference = 97C146EE1CF9000F007C117D /* Runner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		97C146E61CF9000F007C117D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1510;
+				ORGANIZATIONNAME = "";
+				TargetAttributes = {
+					97C146ED1CF9000F007C117D = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 1100;
+					};
+				};
+			};
+			buildConfigurationList = 97C146E91CF9000F007C117D /* Build configuration list for PBXProject "Runner" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 97C146E51CF9000F007C117D;
+			packageReferences = (
+				DA3FD1192D5142A1003DAD73 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */,
+				DAD4BF632D9EEECD00000914 /* XCRemoteSwiftPackageReference "pusher-websocket-swift" */,
+			);
+			productRefGroup = 97C146EF1CF9000F007C117D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97C146ED1CF9000F007C117D /* Runner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		97C146EC1CF9000F007C117D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DACB775C2BD6D238009222A3 /* PrivacyInfo.xcprivacy in Resources */,
+				97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */,
+				3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */,
+				97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */,
+				97C146FC1CF9000F007C117D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		199FF726C14B8255FC67DCAD /* Copy GoogleService-Info.plist */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Copy GoogleService-Info.plist";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "case \"${CONFIGURATION}\" in\n  *-dev)     FLAVOR=dev ;;\n  *-staging) FLAVOR=dev ;;\n  *)         FLAVOR=prod ;;\nesac\nSRC=\"${PROJECT_DIR}/config/firebase/${FLAVOR}/GoogleService-Info.plist\"\nDST=\"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\"\nmkdir -p \"${DST}\"\ncp \"${SRC}\" \"${DST}/GoogleService-Info.plist\"\n";
+		};
+		35A2E7DA8544F423C566E3DA /* [firebase_crashlytics] Crashlytics Upload Symbols */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"\"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}\"",
+				"\"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/\"",
+				"\"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist\"",
+				"\"$(BUILT_PRODUCTS_DIR)/$(EXECUTABLE_PATH)\"",
+				"\"$(PROJECT_DIR)/firebase_app_id_file.json\"",
+			);
+			name = "[firebase_crashlytics] Crashlytics Upload Symbols";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "case \"${CONFIGURATION}\" in\n  *-dev)     APP_ID_FILE=\"${PROJECT_DIR}/config/firebase/dev/firebase_app_id_file.json\" ;;\n  *-staging) APP_ID_FILE=\"${PROJECT_DIR}/config/firebase/dev/firebase_app_id_file.json\" ;;\n  *)         APP_ID_FILE=\"${PROJECT_DIR}/firebase_app_id_file.json\" ;;\nesac\n\"$PODS_ROOT/FirebaseCrashlytics/upload-symbols\" --flutter-project \"$APP_ID_FILE\"\n";
+		};
+		3B06AD1E1E4923F5004D2608 /* Thin Binary */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}",
+			);
+			name = "Thin Binary";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" embed_and_thin";
+		};
+		67995B63309647795FC8BFB0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78D41679467F2577347B21ED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9740EEB61CF901F6004384FC /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" build";
+		};
+		9FD7029D9464C1111632E573 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Runner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		97C146EA1CF9000F007C117D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA9EDB852B7F875600958A82 /* LocationChannel.swift in Sources */,
+				DA0063DD2CE64BF700822395 /* ClockInOutSession.swift in Sources */,
+				DA0063E12CE64D2300822395 /* MyDetails.swift in Sources */,
+				74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */,
+				DA9EDB862B7F875600958A82 /* LocationSrevice.swift in Sources */,
+				DAB2BC052D43BCB200F0C411 /* ModelType.swift in Sources */,
+				DAB2BC062D43BCB200F0C411 /* AgoraCallDataLoaderExtension.swift in Sources */,
+				DAB2BC072D43BCB200F0C411 /* CallChannel.swift in Sources */,
+				DAB2BC082D43BCB200F0C411 /* CallNoAnswerEvent.swift in Sources */,
+				DAB2BC092D43BCB200F0C411 /* VoipChannel.swift in Sources */,
+				DAB2BC0A2D43BCB200F0C411 /* AgoraDelegateExtension.swift in Sources */,
+				DAB2BC0B2D43BCB200F0C411 /* GroupConversationModel.swift in Sources */,
+				DAB2BC0C2D43BCB200F0C411 /* DatabaseDecoderExtension.swift in Sources */,
+				DAB2BC0D2D43BCB200F0C411 /* CallTimeOutSchedulerExtension.swift in Sources */,
+				DAB2BC0E2D43BCB200F0C411 /* GroupVideoCallView.swift in Sources */,
+				DAB2BC0F2D43BCB200F0C411 /* OneToOneVideoCallView.swift in Sources */,
+				DAB2BC102D43BCB200F0C411 /* CallChannelEvents.swift in Sources */,
+				DAB2BC112D43BCB200F0C411 /* StartCallRecordingModel.swift in Sources */,
+				DAB2BC122D43BCB200F0C411 /* AgoraCallControlsExtension.swift in Sources */,
+				DAB2BC132D43BCB200F0C411 /* AgoraStaticVideoView.swift in Sources */,
+				DAB2BC142D43BCB200F0C411 /* AgoraReseterExtension.swift in Sources */,
+				DAB2BC152D43BCB200F0C411 /* CallScreenView.swift in Sources */,
+				DAB2BC162D43BCB200F0C411 /* CallAcceptedEvent.swift in Sources */,
+				DAB2BC172D43BCB200F0C411 /* DatabaseManager.swift in Sources */,
+				DAB2BC182D43BCB200F0C411 /* GroupAudioCallView.swift in Sources */,
+				DAB2BC192D43BCB200F0C411 /* AgoraListenersForCallKit.swift in Sources */,
+				DAB2BC1B2D43BCB200F0C411 /* GroupSettingsModel.swift in Sources */,
+				DAB2BC1C2D43BCB200F0C411 /* ConversationReciverModel.swift in Sources */,
+				DAB2BC1D2D43BCB200F0C411 /* StartCallRecordingApi.swift in Sources */,
+				DAB2BC1E2D43BCB200F0C411 /* ConversationModel.swift in Sources */,
+				DAB2BC1F2D43BCB200F0C411 /* CallRingingEvent.swift in Sources */,
+				DAB2BC202D43BCB200F0C411 /* CallUser.swift in Sources */,
+				DAB2BC212D43BCB200F0C411 /* CallManager.swift in Sources */,
+				DAB2BC222D43BCB200F0C411 /* DatabasePathFinderExtension.swift in Sources */,
+				DAB2BC232D43BCB200F0C411 /* AgoraDynamicVideoView.swift in Sources */,
+				DA3FD11D2D514C5D003DAD73 /* AppLogger.swift in Sources */,
+				DAB2BC242D43BCB200F0C411 /* AgoraValidatorExtension.swift in Sources */,
+				DAB2BC252D43BCB200F0C411 /* AgoraCallRecordingExtension.swift in Sources */,
+				DAB2BC272D43BCB200F0C411 /* NativeCallingEvents.swift in Sources */,
+				DAB2BC282D43BCB200F0C411 /* ParticipantModel.swift in Sources */,
+				DAB2BC292D43BCB200F0C411 /* InterruptionNotificationManager.swift in Sources */,
+				DAB2BC2A2D43BCB200F0C411 /* JoiningAs.swift in Sources */,
+				DAB2BC2B2D43BCB200F0C411 /* CallEventsBinder.swift in Sources */,
+				DAB2BC2C2D43BCB200F0C411 /* ProviderDelegateExtension.swift in Sources */,
+				DAB2BC2D2D43BCB200F0C411 /* CallPayload.swift in Sources */,
+				DAB2BC2E2D43BCB200F0C411 /* CallEventsHelper.swift in Sources */,
+				DAB2BC2F2D43BCB200F0C411 /* PusherAuthenticatorDelegate.swift in Sources */,
+				DAB2BC302D43BCB200F0C411 /* CallTimeView.swift in Sources */,
+				DAB2BC312D43BCB200F0C411 /* AgoraCallTimerExtension.swift in Sources */,
+				DAB2BC322D43BCB200F0C411 /* PusherManager.swift in Sources */,
+				DAB2BC332D43BCB200F0C411 /* CallState.swift in Sources */,
+				DAB2BC342D43BCB200F0C411 /* CallEventDataModel.swift in Sources */,
+				DAB2BC352D43BCB200F0C411 /* OneToOneAudioCallView.swift in Sources */,
+				DAB2BC362D43BCB200F0C411 /* PushKitManager.swift in Sources */,
+				DAB2BC372D43BCB200F0C411 /* CallUserBusyEvent.swift in Sources */,
+				DAB2BC382D43BCB200F0C411 /* AgoraManager.swift in Sources */,
+				DAB2BC392D43BCB200F0C411 /* StopCallRecordingApi.swift in Sources */,
+				DAB2BC3A2D43BCB200F0C411 /* PusherDelegateExtension.swift in Sources */,
+				DAB2BC3B2D43BCB200F0C411 /* NativeCallingEventChannel.swift in Sources */,
+				DAB2BC3C2D43BCB200F0C411 /* CallDeclinedEvent.swift in Sources */,
+				DAB2BC3D2D43BCB200F0C411 /* Call.swift in Sources */,
+				DAB2BC3E2D43BCB200F0C411 /* NativeCallingMethodChannel.swift in Sources */,
+				DAB2BC3F2D43BCB200F0C411 /* CallEndedEventApi.swift in Sources */,
+				DAB2BC402D43BCB200F0C411 /* AgoraTokenApi.swift in Sources */,
+				DAFACE022D43BCB200F0C411 /* RealtimeConfigApi.swift in Sources */,
+				DAB2BC412D43BCB200F0C411 /* CallControlsView.swift in Sources */,
+				DA0063DF2CE64C4C00822395 /* FirebaseLocationLogUpdater.swift in Sources */,
+				DA0063D72CE6457000822395 /* GeofenceService.swift in Sources */,
+				1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		97C146FA1CF9000F007C117D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97C146FB1CF9000F007C117D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97C147001CF9000F007C117D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0CA03580EB5DFA8BC6FAC22D /* Debug-prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F85B06EC0C2E6BBA354B5EC /* Debug-prod.xcconfig */;
+			buildSettings = {
+				APP_DISPLAY_NAME = "TS Driver";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
+				CURRENT_PROJECT_VERSION = 1180;
+				DEVELOPMENT_TEAM = B7Z7G2XW4C;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Runner/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "TS Driver";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.18.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.transportsystemgroup.tsdrivers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Debug-prod";
+		};
+		16D0A98C99B58768705D0E93 /* Profile-staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FBE5F4AB6DF9058665A1168 /* Profile-staging.xcconfig */;
+			buildSettings = {
+				APP_DISPLAY_NAME = "TS Driver Staging";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
+				CURRENT_PROJECT_VERSION = 1180;
+				DEVELOPMENT_TEAM = B7Z7G2XW4C;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Runner/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "TS Driver Staging";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.18.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.transportsystemgroup.tsdrivers.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Profile-staging";
+		};
+		18603E216D5C5226963FD3BF /* Profile-prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73C4A0673CDC19AD792DE345 /* Profile-prod.xcconfig */;
+			buildSettings = {
+				APP_DISPLAY_NAME = "TS Driver";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
+				CURRENT_PROJECT_VERSION = 1180;
+				DEVELOPMENT_TEAM = B7Z7G2XW4C;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Runner/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "TS Driver";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.18.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.transportsystemgroup.tsdrivers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Profile-prod";
+		};
+		1AD48D9D600915135EE55ACB /* Release-staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B45C2F30FB02A6E6601BF7D0 /* Release-staging.xcconfig */;
+			buildSettings = {
+				APP_DISPLAY_NAME = "TS Driver Staging";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
+				CURRENT_PROJECT_VERSION = 1180;
+				DEVELOPMENT_TEAM = B7Z7G2XW4C;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Runner/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "TS Driver Staging";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.18.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.transportsystemgroup.tsdrivers.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Release-staging";
+		};
+		1DEE375330D2D0DDCEED645B /* Profile-dev */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=*]" = armv7;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Profile-dev";
+		};
+		249021D3217E4FDB00AE95B9 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=*]" = armv7;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Profile;
+		};
+		249021D4217E4FDB00AE95B9 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				APP_DISPLAY_NAME = "TS Driver";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
+				CURRENT_PROJECT_VERSION = 1180;
+				DEVELOPMENT_TEAM = B7Z7G2XW4C;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Runner/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "TS Driver";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.18.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.transportsystemgroup.tsdrivers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Profile;
+		};
+		2A47020A36EB80AD71439D07 /* Release-dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71734F4E0F7E25CD7DF7FB79 /* Release-dev.xcconfig */;
+			buildSettings = {
+				APP_DISPLAY_NAME = "TS Driver Dev";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
+				CURRENT_PROJECT_VERSION = 1180;
+				DEVELOPMENT_TEAM = B7Z7G2XW4C;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Runner/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "TS Driver Dev";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.18.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.transportsystemgroup.tsdrivers.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Release-dev";
+		};
+		37585A522017B9CEE8DBCFB6 /* Debug-staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=*]" = armv7;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug-staging";
+		};
+		533C0BF883DD584A671FEA05 /* Debug-staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F47CF6EAB9DB854A5BB5AB61 /* Debug-staging.xcconfig */;
+			buildSettings = {
+				APP_DISPLAY_NAME = "TS Driver Staging";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
+				CURRENT_PROJECT_VERSION = 1180;
+				DEVELOPMENT_TEAM = B7Z7G2XW4C;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Runner/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "TS Driver Staging";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.18.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.transportsystemgroup.tsdrivers.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Debug-staging";
+		};
+		7190205EAE59491B8EC7F94E /* Debug-prod */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=*]" = armv7;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug-prod";
+		};
+		97C147031CF9000F007C117D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=*]" = armv7;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		97C147041CF9000F007C117D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=*]" = armv7;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		97C147061CF9000F007C117D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
+			buildSettings = {
+				APP_DISPLAY_NAME = "TS Driver";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
+				CURRENT_PROJECT_VERSION = 1180;
+				DEVELOPMENT_TEAM = B7Z7G2XW4C;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Runner/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "TS Driver";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.18.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.transportsystemgroup.tsdrivers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		97C147071CF9000F007C117D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				APP_DISPLAY_NAME = "TS Driver";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
+				CURRENT_PROJECT_VERSION = 1180;
+				DEVELOPMENT_TEAM = B7Z7G2XW4C;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Runner/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "TS Driver";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.18.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.transportsystemgroup.tsdrivers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		A31E74E3B079F2C4A65D3080 /* Debug-dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CFECCC43A51E25E9107727A /* Debug-dev.xcconfig */;
+			buildSettings = {
+				APP_DISPLAY_NAME = "TS Driver Dev";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
+				CURRENT_PROJECT_VERSION = 1180;
+				DEVELOPMENT_TEAM = B7Z7G2XW4C;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Runner/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "TS Driver Dev";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.18.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.transportsystemgroup.tsdrivers.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Debug-dev";
+		};
+		AAA85C588C2DC089BC92F6BE /* Debug-dev */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=*]" = armv7;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug-dev";
+		};
+		B49588278B753936974B2A78 /* Release-dev */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=*]" = armv7;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release-dev";
+		};
+		B9A285C4B3C0E12896467E65 /* Profile-staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=*]" = armv7;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Profile-staging";
+		};
+		CBED6320EB47F3F13EEE9661 /* Profile-prod */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=*]" = armv7;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Profile-prod";
+		};
+		D43BB961B251DFD9FA72D670 /* Release-prod */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=*]" = armv7;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release-prod";
+		};
+		D8648C90F7B21DA86B7170DC /* Release-prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46CF612CEAA8C6D48CB306DB /* Release-prod.xcconfig */;
+			buildSettings = {
+				APP_DISPLAY_NAME = "TS Driver";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
+				CURRENT_PROJECT_VERSION = 1180;
+				DEVELOPMENT_TEAM = B7Z7G2XW4C;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Runner/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "TS Driver";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.18.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.transportsystemgroup.tsdrivers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Release-prod";
+		};
+		DE622BDC1E22547471A534DC /* Profile-dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F070DCA5EB7539C7A2173F8 /* Profile-dev.xcconfig */;
+			buildSettings = {
+				APP_DISPLAY_NAME = "TS Driver Dev";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
+				CURRENT_PROJECT_VERSION = 1180;
+				DEVELOPMENT_TEAM = B7Z7G2XW4C;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Runner/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "TS Driver Dev";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.18.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.transportsystemgroup.tsdrivers.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Profile-dev";
+		};
+		DF6C5012266CA108E3B4C324 /* Release-staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=*]" = armv7;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release-staging";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		97C146E91CF9000F007C117D /* Build configuration list for PBXProject "Runner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97C147031CF9000F007C117D /* Debug */,
+				97C147041CF9000F007C117D /* Release */,
+				249021D3217E4FDB00AE95B9 /* Profile */,
+				AAA85C588C2DC089BC92F6BE /* Debug-dev */,
+				B49588278B753936974B2A78 /* Release-dev */,
+				1DEE375330D2D0DDCEED645B /* Profile-dev */,
+				37585A522017B9CEE8DBCFB6 /* Debug-staging */,
+				DF6C5012266CA108E3B4C324 /* Release-staging */,
+				B9A285C4B3C0E12896467E65 /* Profile-staging */,
+				7190205EAE59491B8EC7F94E /* Debug-prod */,
+				D43BB961B251DFD9FA72D670 /* Release-prod */,
+				CBED6320EB47F3F13EEE9661 /* Profile-prod */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97C147051CF9000F007C117D /* Build configuration list for PBXNativeTarget "Runner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97C147061CF9000F007C117D /* Debug */,
+				97C147071CF9000F007C117D /* Release */,
+				249021D4217E4FDB00AE95B9 /* Profile */,
+				A31E74E3B079F2C4A65D3080 /* Debug-dev */,
+				2A47020A36EB80AD71439D07 /* Release-dev */,
+				DE622BDC1E22547471A534DC /* Profile-dev */,
+				533C0BF883DD584A671FEA05 /* Debug-staging */,
+				1AD48D9D600915135EE55ACB /* Release-staging */,
+				16D0A98C99B58768705D0E93 /* Profile-staging */,
+				0CA03580EB5DFA8BC6FAC22D /* Debug-prod */,
+				D8648C90F7B21DA86B7170DC /* Release-prod */,
+				18603E216D5C5226963FD3BF /* Profile-prod */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DA0A4F422D6CEB5800B257B9 /* XCRemoteSwiftPackageReference "pusher-websocket-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pusher/pusher-websocket-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.1.5;
+			};
+		};
+		DA3FD1192D5142A1003DAD73 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AgoraIO/AgoraRtcEngine_iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.0;
+			};
+		};
+		DAB2BB9E2D43BAD500F0C411 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AgoraIO/AgoraRtcEngine_iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.0;
+			};
+		};
+		DAB2BB9F2D43BAF300F0C411 /* XCRemoteSwiftPackageReference "pusher-websocket-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pusher/pusher-websocket-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		DAD4BF632D9EEECD00000914 /* XCRemoteSwiftPackageReference "pusher-websocket-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pusher/pusher-websocket-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.1.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DA0A4F432D6CEB5800B257B9 /* PusherSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA0A4F422D6CEB5800B257B9 /* XCRemoteSwiftPackageReference "pusher-websocket-swift" */;
+			productName = PusherSwift;
+		};
+		DA3FD1122D5114C4003DAD73 /* RtcBasic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DAB2BB9E2D43BAD500F0C411 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = RtcBasic;
+		};
+		DA3FD11A2D5142A1003DAD73 /* RtcBasic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA3FD1192D5142A1003DAD73 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = RtcBasic;
+		};
+		DAB2BBA02D43BAF300F0C411 /* PusherSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DAB2BB9F2D43BAF300F0C411 /* XCRemoteSwiftPackageReference "pusher-websocket-swift" */;
+			productName = PusherSwift;
+		};
+		DAD4BF642D9EEECD00000914 /* PusherSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DAD4BF632D9EEECD00000914 /* XCRemoteSwiftPackageReference "pusher-websocket-swift" */;
+			productName = PusherSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 97C146E61CF9000F007C117D /* Project object */;
+}

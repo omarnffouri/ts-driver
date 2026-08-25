@@ -1,0 +1,62 @@
+# Flavor generation config — regenerate with: dart run flutter_flavorizr
+#
+# `instructions` is pinned to the brownfield-safe set: it must NEVER include
+# flutter:main / flutter:app / flutter:pages (they overwrite lib/main.dart and
+# scaffold a template app). After regenerating, verify the F.appFlavor init
+# line in lib/main.dart is still present.
+#
+# iOS is flavorized (ios:xcconfig, ios:buildTargets, ios:schema, ios:podfile ran
+# once on a Mac to generate Runner.xcodeproj's per-flavor build configs/schemes/
+# xcconfigs — see ios/Runner.xcodeproj/project.pbxproj and ios/Flutter/*.xcconfig).
+# NOT re-listed in `instructions` below: rerunning ios:* would regenerate the
+# hand-tuned Firebase copy + Crashlytics-upload shell script build phases
+# (PBXShellScriptBuildPhase "Copy GoogleService-Info.plist" / "[firebase_crashlytics]
+# Crashlytics Upload Symbols" in project.pbxproj) with flavorizr's generic
+# per-config resource copy instead. If iOS ever needs regenerating, re-add
+# ios:xcconfig/ios:buildTargets/ios:schema/ios:podfile, run, then re-apply those
+# two script phases by hand from git history.
+
+app:
+  android:
+    flavorDimensions: "env"
+
+ide: "vscode"
+
+instructions:
+  - android:androidManifest
+  - android:flavorizrGradle
+  - android:buildGradle
+  - flutter:flavors
+  - ide:config
+
+flavors:
+  dev:
+    app:
+      name: "TS Drivers Dev"
+    android:
+      applicationId: "com.transport_system.ts_driver.dev"
+    ios:
+      bundleId: "com.transportsystemgroup.tsdrivers.dev"
+
+  # staging deliberately reuses dev's application id / bundle id so it also
+  # reuses dev's Firebase project (FCM + APNs/VoIP push), which the backend has
+  # already registered. Its API host stays staging.ts-portal.com. Consequence:
+  # dev and staging are one installed app and replace each other on device.
+  # To undo, restore the .staging ids here and see the staging entries in
+  # android/app/src/staging/, ios/Runner.xcodeproj (2 script phases) and
+  # lib/app/core/services/firebase/default_firebase_options.dart.
+  staging:
+    app:
+      name: "TS Drivers Staging"
+    android:
+      applicationId: "com.transport_system.ts_driver.dev"
+    ios:
+      bundleId: "com.transportsystemgroup.tsdrivers.dev"
+
+  prod:
+    app:
+      name: "TS Drivers"
+    android:
+      applicationId: "com.transport_system.ts_driver"
+    ios:
+      bundleId: "com.transportsystemgroup.tsdrivers"

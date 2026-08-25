@@ -1,0 +1,181 @@
+name: ts_driver
+
+version: 1.18.11+1191
+
+# this is the version of the app build with live server
+publish_to: none
+description: A new Flutter project.
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  pro_image_editor: ^11.6.0
+  get: 4.7.3
+  dio: ^5.0.3
+  get_it: ^7.6.4
+  internet_connection_checker: ^1.0.0+1
+  get_storage: ^2.1.1
+  dartz: ^0.10.1
+  flutter_native_splash: ^2.2.19
+  flutter_svg: ^2.0.4
+  simple_image_cropper:
+    path: ./simple_image_cropper
+  intl:
+  image_picker: ^1.2.1
+  equatable: ^2.0.5
+  loading_overlay: ^0.3.0
+  persistent_bottom_nav_bar_v2: ^5.2.3
+  badges: ^3.1.2
+  flutter_html: ^3.0.0-alpha.6
+  signature: ^5.3.2
+  flutter_staggered_animations: ^1.1.1
+  flutter_staggered_grid_view: ^0.7.0
+  path_provider: ^2.0.14
+  permission_handler: ^11.3.0
+  flutter_rating_stars: ^1.0.3+4
+  pull_to_refresh: ^2.0.0
+  flutter_launcher_icons: ^0.13.1
+  flutter_secure_storage: ^8.0.0
+  photo_view: ^0.15.0
+  path: ^1.8.2
+  floating_action_bubble: ^1.1.4
+  url_launcher: ^6.1.11
+  flutter_screenutil: ^5.7.0
+  double_back_to_close: ^2.0.0
+  awesome_dio_interceptor: ^1.0.0
+  upgrader: ^13.5.0
+  firebase_messaging: ^16.3.0
+  firebase_core: ^4.10.0
+  flutter_local_notifications: ^18.0.1
+  awesome_snackbar_content: ^0.1.8
+  firebase_auth: ^6.5.2
+  cloud_firestore: ^6.5.0
+  uuid: ^4.1.0
+  file_picker: ^8.3.1
+  package_info_plus: ^8.0.2
+  shimmer: ^3.0.0
+  location: ^5.0.3
+  http: ^1.2.0
+  firebase_crashlytics: ^5.2.3
+  flutter_image_compress: ^2.0.4
+  emoji_picker_flutter: ^4.3.0
+  just_audio: ^0.9.35
+  google_maps_flutter: ^2.17.1
+  geocoding: ^2.1.1
+  geolocator: ^10.0.1
+  video_thumbnail_pro: ^0.7.3
+  dart_pusher_channels:
+  rxdart: ^0.27.7
+  audio_session: ^0.1.16
+  sqflite: ^2.3.0
+  animate_do: ^3.0.2
+  mime: ^1.0.4
+  audio_waveforms: ^1.0.5
+  record: ^6.1.2
+  flutter_downloader: ^1.11.3
+  flutter_polyline_points: ^2.0.0
+  shared_preferences: ^2.2.2
+  scrollable_positioned_list: ^0.3.8
+  lottie: ">=3.3.1 <3.4.0"
+  cached_network_image: ^3.3.0
+  device_info_plus: ^11.5.0
+  app_settings: ^5.1.1
+  firebase_database: ^12.4.2
+  pinput: ^3.0.1
+  google_fonts: ^4.0.4
+  syncfusion_flutter_datepicker: ^31.1.21
+  syncfusion_flutter_pdfviewer: ^31.1.21
+  keyboard_detection: ^0.7.0
+  flutter_file_dialog: ^3.0.2
+  expandable_page_view: ^1.0.17
+  smooth_page_indicator: ^1.1.0
+  timeago: ^3.6.1
+  video_player: ^2.11.1
+  local_auth: ^3.0.1
+  firebase_remote_config: ^6.5.2
+  dotted_line: ^3.2.2
+  syncfusion_flutter_charts: ^31.1.21
+  material_dialogs: ^1.1.4
+  share_plus: ^11.0.0
+  dotted_border: ^2.1.0
+  dropdown_search: ^6.0.2
+  font_awesome_flutter: ^10.8.0
+  sms_autofill: ^2.4.1
+  percent_indicator: ^4.2.5
+  gal: ^2.3.2
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  lint: ^2.0.1
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.4.7 # flutter pub run build_runner build
+  flutter_gen_runner:
+  flutter_flavorizr: 2.5.0
+
+dependency_overrides:
+  built_value: 8.6.0
+
+# flutter_gen output relocated under core (was the default lib/gen/)
+flutter_gen:
+  output: lib/app/core/gen/
+
+flutter_launcher_icons:
+  image_path_android: "assets/images/ts.png"
+  image_path_ios: "assets/images/ts.png"
+  # adaptive_icon_foreground: "assets/images/ts.png"
+  android: true # can specify file name here e.g. "ic_launcher"
+  ios: true # can specify file name here e.g. "My-Launcher-Icon"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  # adaptive_icon_background: "assets/images/red.png"
+  remove_alpha_ios: true
+
+# Native launch splash — white background with the red logo.
+# Regenerate after changing: dart run flutter_native_splash:create
+flutter_native_splash:
+  color: "#FFFFFF"
+  color_dark: "#FFFFFF"
+  image: assets/images/splash_logo.png
+  image_dark: assets/images/splash_logo.png
+  android_12:
+    image: assets/images/splash_logo_android12.png
+    image_dark: assets/images/splash_logo_android12.png
+    icon_background_color: "#FFFFFF"
+    icon_background_color_dark: "#FFFFFF"
+    color: "#FFFFFF"
+    color_dark: "#FFFFFF"
+  android: true
+  ios: true
+  web: false
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/svg/
+    - assets/images/
+    - assets/chat_icons/
+    - assets/json/
+    - assets/sounds/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins-Italic.ttf
+          weight: 400
+          style: italic
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Poppins-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/Poppins-Black.ttf
+          weight: 900

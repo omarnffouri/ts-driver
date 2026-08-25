@@ -1,0 +1,21 @@
+android {
+    flavorDimensions += "env"
+
+    productFlavors {
+        dev {
+            dimension "env"
+            applicationId "com.transport_system.ts_driver.dev"
+            resValue "string", "app_name", "TS Drivers Dev"
+        }
+        staging {
+            dimension "env"
+            applicationId "com.transport_system.ts_driver.dev"
+            resValue "string", "app_name", "TS Drivers Staging"
+        }
+        prod {
+            dimension "env"
+            applicationId "com.transport_system.ts_driver"
+            resValue "string", "app_name", "TS Drivers"
+        }
+    }
+}

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.RingingFragment">
+
+    <TextView
+        android:id="@+id/app_name_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/caller_image"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="24dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/user"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_name_holder" />
+
+    <TextView
+        android:id="@+id/caller_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caller_image" />
+
+    <TextView
+        android:id="@+id/call_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Audio"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/caller_name"
+        app:layout_constraintStart_toStartOf="@+id/caller_name"
+        app:layout_constraintTop_toBottomOf="@+id/caller_name"
+        tools:ignore="HardcodedText" />
+
+
+    <com.ncorti.slidetoact.SlideToActView
+        android:id="@+id/accept_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        app:bounce_on_start="true"
+        app:icon_margin="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/decline_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:outer_color="@color/accept_call_background_color"
+        app:slider_icon="@drawable/call_up_icon"
+        app:animation_duration="100"
+        app:text="@string/slide_to_accept"
+        app:text_color="@android:color/white" />
+
+    <com.ncorti.slidetoact.SlideToActView
+        android:id="@+id/decline_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="32dp"
+        app:bounce_on_start="true"
+        app:icon_margin="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:outer_color="@color/decline_call_background_color"
+        app:slider_icon="@drawable/call_end_icon"
+        app:slider_reversed="true"
+        app:animation_duration="100"
+        app:text="@string/slide_to_decline"
+        app:text_color="@android:color/white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- app_name is provided per-flavor by flavorizr.gradle resValue -->
+    <string name="icon">icon</string>
+    <string name="slide_to_accept">Slide to Accept</string>
+    <string name="slide_to_decline">Slide to Decline</string>
+    <string name="text_accept">Accept</string>
+    <string name="text_decline">Decline</string>
+    <string name="text_missed_call">Missed call</string>
+    <string name="text_call_back">Call back</string>
+    <string name="flutter_downloader_notification_started">Download started</string>
+    <string name="flutter_downloader_notification_in_progress">Download in progress</string>
+    <string name="flutter_downloader_notification_canceled">Download canceled</string>
+    <string name="flutter_downloader_notification_failed">Download failed</string>
+    <string name="flutter_downloader_notification_complete">Download complete</string>
+    <string name="flutter_downloader_notification_paused">Download paused</string>
+</resources>

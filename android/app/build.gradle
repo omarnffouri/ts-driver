@@ -1,0 +1,177 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'dev.flutter.flutter-gradle-plugin'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+}
+
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+        localProperties.load(reader)
+    }
+}
+
+def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
+if (flutterVersionCode == null) {
+    flutterVersionCode = '1'
+}
+
+def flutterVersionName = localProperties.getProperty('flutter.versionName')
+if (flutterVersionName == null) {
+    flutterVersionName = '1.0'
+}
+
+def keystoreProperties = new Properties()
+   def keystorePropertiesFile = rootProject.file('key.properties')
+   if (keystorePropertiesFile.exists()) {
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+   }
+
+// Short HEAD hash for APK naming; "nogit" when not in a git checkout.
+def gitCommitHash = {
+    try {
+        def stdout = new ByteArrayOutputStream()
+        exec {
+            commandLine 'git', 'rev-parse', '--short', 'HEAD'
+            standardOutput = stdout
+            errorOutput = new ByteArrayOutputStream()
+            ignoreExitValue = true
+        }
+        def hash = stdout.toString().trim()
+        return hash ?: 'nogit'
+    } catch (ignored) {
+        return 'nogit'
+    }
+}()
+
+android {
+    ndkVersion '28.2.13676358'
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+        coreLibraryDesugaringEnabled true
+    }
+
+    kotlinOptions {
+        jvmTarget = '11'
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
+    signingConfigs {
+        release {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
+            storePassword keystoreProperties['storePassword']
+        }
+    }
+
+    defaultConfig {
+        applicationId 'com.transport_system.ts_driver'
+        compileSdk 36
+        minSdkVersion 26
+        targetSdkVersion 36
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+        multiDexEnabled true
+
+        ndk {
+            // Filter for architectures supported by Flutter.
+            abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86_64'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            signingConfig signingConfigs.release
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    // Versioned APK names, e.g. ts_driver-v1.18.1+1181-a1b2c3d-release.apk
+    // (prod keeps the historical name; other flavors add their name).
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def flavorPart = variant.flavorName == 'prod' ? '' : "-${variant.flavorName}"
+            output.outputFileName = "ts_driver-v${variant.versionName}+${variant.versionCode}-${gitCommitHash}${flavorPart}-${variant.buildType.name}.apk"
+        }
+    }
+
+    viewBinding {
+        enabled = true
+    }
+
+    namespace 'com.transport_system.ts_driver'
+}
+
+// `flutter build appbundle --flavor prod` always emits app-prod-release.aab and
+// Flutter expects that name, so write a versioned copy beside it instead of renaming.
+tasks.matching { it.name == 'bundleProdRelease' }.configureEach { task ->
+    task.doLast {
+        def dir = layout.buildDirectory.dir('outputs/bundle/prodRelease').get().asFile
+        def src = new File(dir, 'app-prod-release.aab')
+        if (src.exists()) {
+            def dest = new File(dir,
+                "ts_driver-v${android.defaultConfig.versionName}+${android.defaultConfig.versionCode}-${gitCommitHash}-release.aab")
+            java.nio.file.Files.copy(src.toPath(), dest.toPath(),
+                java.nio.file.StandardCopyOption.REPLACE_EXISTING)
+        }
+    }
+}
+
+flutter {
+    source '../..'
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'androidx.activity:activity-ktx:1.10.0'
+    implementation 'androidx.fragment:fragment-ktx:1.8.5'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation platform('com.google.firebase:firebase-bom:34.14.0')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-messaging'
+    implementation 'com.google.firebase:firebase-database-ktx:21.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.0'
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.1.4'
+    implementation 'androidx.window:window:1.3.0'
+    implementation 'androidx.window:window-java:1.3.0'
+    implementation 'com.google.android.gms:play-services-location:21.3.0'
+    implementation 'com.google.android.recaptcha:recaptcha:18.6.1'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.1.4'
+    implementation 'org.slf4j:slf4j-api:1.7.32'
+    implementation 'org.slf4j:slf4j-simple:1.7.32'
+
+    // Add language package you need to use fo mlkit
+    implementation 'com.google.mlkit:text-recognition-chinese:16.0.1'
+    implementation 'com.google.mlkit:text-recognition-devanagari:16.0.1'
+    implementation 'com.google.mlkit:text-recognition-japanese:16.0.1'
+    implementation 'com.google.mlkit:text-recognition-korean:16.0.1'
+
+    // other dep
+    implementation 'com.pusher:pusher-java-client:2.4.4'
+    implementation 'io.agora.rtc:full-sdk:4.5.0'
+    implementation 'androidx.sqlite:sqlite-ktx:2.4.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.ncorti:slidetoact:0.11.0'
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.google.code.gson:gson:2.10.1'
+}
+// ----- BEGIN flavorDimensions (autogenerated by flutter_flavorizr) -----
+apply from: "flavorizr.gradle"
+// ----- END flavorDimensions (autogenerated by flutter_flavorizr) -----

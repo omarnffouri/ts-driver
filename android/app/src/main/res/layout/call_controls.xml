@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_black_background"
+    android:paddingVertical="10dp">
+
+    <!-- Speaker Button -->
+    <ImageButton
+        android:id="@+id/btnSpeaker"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/circle_gray_background"
+        android:contentDescription="@string/icon"
+        android:src="@drawable/speaker_on"
+        app:layout_constraintEnd_toStartOf="@+id/btnSwitchCamera"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white" />
+
+    <!-- Switch Camera Button -->
+    <ImageButton
+        android:id="@+id/btnSwitchCamera"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/circle_gray_background"
+        android:contentDescription="@string/icon"
+        android:src="@drawable/switch_camera"
+        app:layout_constraintEnd_toStartOf="@+id/btnMuteVideo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnSpeaker"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white" />
+
+    <!-- Mute Video Button -->
+    <ImageButton
+        android:id="@+id/btnMuteVideo"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/circle_gray_background"
+        android:contentDescription="@string/icon"
+        android:src="@drawable/video_on"
+        app:layout_constraintEnd_toStartOf="@+id/btnMuteAudio"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnSwitchCamera"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white" />
+
+    <!-- Mute Audio Button -->
+    <ImageButton
+        android:id="@+id/btnMuteAudio"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/circle_gray_background"
+        android:contentDescription="@string/icon"
+        android:src="@drawable/mic_on"
+        app:layout_constraintEnd_toStartOf="@+id/btnEndCall"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnMuteVideo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white" />
+
+    <!-- End Call Button -->
+    <ImageButton
+        android:id="@+id/btnEndCall"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/circle_red_background"
+        android:contentDescription="@string/icon"
+        android:src="@drawable/call_end_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnMuteAudio"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
